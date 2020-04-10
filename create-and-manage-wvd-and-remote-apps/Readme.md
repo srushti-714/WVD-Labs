@@ -123,7 +123,7 @@ To quickly download and install the Windows Virtual Desktop PowerShell module,
      ```sql
        $tenant = "wvdtrainingtenant[DeploymentId]" 
        $hostpoolname = "[hostpool1]"
-       ```
+     ```
   
  5. Run the following cmdlet to sign into the Windows Virtual Desktop  environment. 
        
@@ -275,9 +275,11 @@ To quickly download and install the Windows Virtual Desktop PowerShell module,
 
 5. To add the Wordpad application to the remote app group run the following cmdlet.
 
-      ```sql
+    ```sql
+    
       New-RdsRemoteApp -TenantName $tenant -HostPoolName $hostpoolname -AppGroupName Wordpad -Name Wordpad -Filepath "C:\Program Files\Windows NT\Accessories\wordpad.exe" -IconPath "C:\Program Files\Windows NT\Accessories\wordpad.exe" 
-       ```
+      
+    ```
        
 6. Verify the app was published to the remote app group.
 
