@@ -228,7 +228,7 @@ To quickly download and install the Windows Virtual Desktop PowerShell module,
 
       Username: Enter "WVD USER 1" email id
 
-      Password: <inject key="AzureAdUserPassword" />.1!!
+      Password: <inject key="AzureAdUserPassword" /> .1!! 
 
 28.  Once connected to the desktop, open task manager 
 
