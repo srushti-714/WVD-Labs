@@ -222,7 +222,7 @@ To quickly download and install the Windows Virtual Desktop PowerShell module,
 
 25. In the **Email, phone, or Skype** box, provide "WVD USER 1" email id and click **Next** 
       
-26. In the Password box, type <inject key="AzureAdUserPassword" />.1!! and click **Sign in** 
+26. In the Password box, type <inject key="AzureAdUserPassword" /> .1!! and click **Sign in** 
 
 27.  Click on **WS 2019**, click **Allow**, and log in with: 
 
@@ -253,16 +253,19 @@ To quickly download and install the Windows Virtual Desktop PowerShell module,
   In this example, we will create a new remote application group that will publish the Wordpad Desktop application. 
   
   1.  Run the following PowerShell cmdlet to create a new empty RemoteApp group. 
-        ```sql
+  
+       ```sql
         New-RdsAppGroup -TenantName $tenant -HostPoolName $hostpoolname -Name Wordpad -ResourceType 
        RemoteApp
        ```
 
 2.  To see a list of available applications in the host pool run the following command. 
+
       ```sql
       Get-RdsStartMenuApp -TenantName $tenant -HostPoolName $hostpoolname -AppGroupName Wordpad
       ```
 3.  We can search for specific apps, and in this exercise we want to search for and create a remote app for our Wordpad users. 
+
       ```sql
      Get-RdsStartMenuApp -TenantName $tenant -HostPoolName $hostpoolname -AppGroupName Wordpad | ?{$_.FriendlyName -match "Wordpad"}
       ```
@@ -273,15 +276,18 @@ To quickly download and install the Windows Virtual Desktop PowerShell module,
       ```sql
       New-RdsRemoteApp -TenantName $tenant -HostPoolName $hostpoolname -AppGroupName Wordpad -Name Wordpad -Filepath "C:\Program Files\Windows NT\Accessories\wordpad.exe" -IconPath "C:\Program Files\Windows NT\Accessories\wordpad.exe" 
        ```
-6. Verify the app was published to the remote app group. 
+6. Verify the app was published to the remote app group.
+
       ```sql
      Get-RdsRemoteApp -TenantName $tenant -HostPoolName $hostpoolname -AppGroupName Wordpad
      ```
+     
      **Note**: You can add additional apps to this remote app group by repeating the above steps. 
 
 7.  Now that we've created a remote app group and published the Wordpad app we can assign access to the group. 
 
-8. Replace **"[userupn]"** with "**WVD User 2**" from the environment details page   
+8. Replace **"[userupn]"** with "**WVD User 2**" from the environment details page
+
       ```sql
       Add-RdsAppGroupUser -TenantName $tenant -HostPoolName $hostpoolname -AppGroupName Wordpad -UserPrincipalName [userupn]
     ```  
@@ -299,13 +305,13 @@ To quickly download and install the Windows Virtual Desktop PowerShell module,
 
 4. In the **Email, phone, or Skype** box, provide email id of "**WVD User 2**" and click **Next** 
 
-5.  In the **Password** box, type <inject key="AzureAdUserPassword" />.1!! and click **Sign in** 
+5.  In the **Password** box, type <inject key="AzureAdUserPassword" /> .1!! and click **Sign in** 
 
 6. Click on **wordpad**, click **Allow**, and log in with: 
 
       Username: Provide email id of "**WVD User 2**"
 
-      Password: <inject key="AzureAdUserPassword" />.1!!
+      Password: <inject key="AzureAdUserPassword" /> .1!!
       
       
       
