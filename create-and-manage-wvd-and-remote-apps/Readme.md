@@ -120,7 +120,7 @@ To quickly download and install the Windows Virtual Desktop PowerShell module,
  4. Replace  **"[DeploymentId]"** with **" UserId"**. 
     Note: UserId will be the xxxxx in odl_user_xxxxx@msazurelabs.onmicrosoft.com 
 
-     ```sql
+    ```sql
        $tenant = "wvdtrainingtenant[DeploymentId]" 
        $hostpoolname = "[hostpool1]"
      ```
@@ -222,13 +222,13 @@ To quickly download and install the Windows Virtual Desktop PowerShell module,
 
 25. In the **Email, phone, or Skype** box, provide "WVD USER 1" email id and click **Next** 
       
-26. In the Password box, type <inject key="AzureAdUserPassword" /> .1!! and click **Sign in** 
+26. In the Password box, Copy the password of "**WVD User 1**" from the user environment details page and enter it here and click **Sign in** 
 
 27.  Click on **WS 2019**, click **Allow**, and log in with: 
 
-      Username: Enter "WVD USER 1" email id
+      Username: Copy the value of "**WVD User 1**" from the user environment details page and enter it here
 
-      Password: <inject key="AzureAdUserPassword" /> .1!! 
+      Password: Copy the password of "**WVD User 1**" from the user environment details page and enter it here
 
 28.  Once connected to the desktop, open task manager 
 
@@ -254,7 +254,7 @@ To quickly download and install the Windows Virtual Desktop PowerShell module,
   
   1.  Run the following PowerShell cmdlet to create a new empty RemoteApp group. 
   
-       ```sql
+      ```sql
         New-RdsAppGroup -TenantName $tenant -HostPoolName $hostpoolname -Name Wordpad -ResourceType 
        RemoteApp
        ```
@@ -275,13 +275,13 @@ To quickly download and install the Windows Virtual Desktop PowerShell module,
 
 5. To add the Wordpad application to the remote app group run the following cmdlet.
 
-      ```json
-     New-RdsRemoteApp -TenantName $tenant -HostPoolName $hostpoolname -AppGroupName Wordpad -Name Wordpad -Filepath "C:\Program Files\Windows NT\Accessories\wordpad.exe" -IconPath "C:\Program Files\Windows NT\Accessories\wordpad.exe"
-      ```
+```json
+New-RdsRemoteApp -TenantName $tenant -HostPoolName $hostpoolname -AppGroupName Wordpad -Name Wordpad -Filepath "C:\Program Files\Windows NT\Accessories\wordpad.exe" -IconPath "C:\Program Files\Windows NT\Accessories\wordpad.exe"
+```
        
 6. Verify the app was published to the remote app group.
 
-      ```sql
+     ```sql
      Get-RdsRemoteApp -TenantName $tenant -HostPoolName $hostpoolname -AppGroupName Wordpad
      ```
      
@@ -308,13 +308,13 @@ To quickly download and install the Windows Virtual Desktop PowerShell module,
 
 4. In the **Email, phone, or Skype** box, provide email id of "**WVD User 2**" and click **Next** 
 
-5.  In the **Password** box, type <inject key="AzureAdUserPassword"/> .1!! and click **Sign in** 
+5.  In the **Password** box, Copy the password of "**WVD User 2**" from the user environment details page and enter it here and click **Sign in** 
 
 6. Click on **wordpad**, click **Allow**, and log in with: 
 
-      Username: Provide email id of "**WVD User 2**"
+      Username: Copy the email id of "**WVD User 2**" from the user environment details page and enter it here
 
-      Password: <inject key="AzureAdUserPassword"/> .1!!
+      Password: Copy the password of "**WVD User 2**" from the user environment details page and enter it here
       
       
   # Conclusion 
