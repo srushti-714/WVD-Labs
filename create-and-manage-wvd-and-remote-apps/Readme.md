@@ -264,11 +264,13 @@ To quickly download and install the Windows Virtual Desktop PowerShell module,
       ```sql
       Get-RdsStartMenuApp -TenantName $tenant -HostPoolName $hostpoolname -AppGroupName Wordpad
       ```
+      
 3.  We can search for specific apps, and in this exercise we want to search for and create a remote app for our Wordpad users. 
 
       ```sql
      Get-RdsStartMenuApp -TenantName $tenant -HostPoolName $hostpoolname -AppGroupName Wordpad | ?{$_.FriendlyName -match "Wordpad"}
       ```
+      
 4.  In the next step, we will use the FilePath, IconPath, and IconIndex fto create our Wordpad Desktop remote app 
 
 5. To add the Wordpad application to the remote app group run the following cmdlet.
@@ -276,6 +278,7 @@ To quickly download and install the Windows Virtual Desktop PowerShell module,
       ```sql
       New-RdsRemoteApp -TenantName $tenant -HostPoolName $hostpoolname -AppGroupName Wordpad -Name Wordpad -Filepath "C:\Program Files\Windows NT\Accessories\wordpad.exe" -IconPath "C:\Program Files\Windows NT\Accessories\wordpad.exe" 
        ```
+       
 6. Verify the app was published to the remote app group.
 
       ```sql
@@ -288,9 +291,9 @@ To quickly download and install the Windows Virtual Desktop PowerShell module,
 
 8. Replace **"[userupn]"** with "**WVD User 2**" from the environment details page
 
-      ```sql
+     ```sql
       Add-RdsAppGroupUser -TenantName $tenant -HostPoolName $hostpoolname -AppGroupName Wordpad -UserPrincipalName [userupn]
-    ```  
+     ```  
        
      Now that we've created a remote app and assigned access we can log in to the web client and open our published applications.
     
@@ -305,14 +308,13 @@ To quickly download and install the Windows Virtual Desktop PowerShell module,
 
 4. In the **Email, phone, or Skype** box, provide email id of "**WVD User 2**" and click **Next** 
 
-5.  In the **Password** box, type <inject key="AzureAdUserPassword" /> .1!! and click **Sign in** 
+5.  In the **Password** box, type <inject key="AzureAdUserPassword"/> .1!! and click **Sign in** 
 
 6. Click on **wordpad**, click **Allow**, and log in with: 
 
       Username: Provide email id of "**WVD User 2**"
 
-      Password: <inject key="AzureAdUserPassword" /> .1!!
-      
+      Password: <inject key="AzureAdUserPassword"/> .1!!
       
       
   # Conclusion 
