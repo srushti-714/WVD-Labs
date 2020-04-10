@@ -1,8 +1,8 @@
  # Register the virtual machines to the Windows Virtual Desktop host pool 
 
- **Registering the virtual machines to a Windows Virtual Desktop host pool is as simple as installing the Windows Virtual Desktop agents. 
+ **Registering the virtual machines to a Windows Virtual Desktop host pool is as simple as installing the Windows Virtual Desktop agents.** 
 
- **To register the Windows Virtual Desktop agents, do the following on the RDSH windows server **
+ **To register the Windows Virtual Desktop agents, do the following on the RDSH windows server**
   
   
 1. Go to the Environment details page and copy the value of "**RDSH VM PrivateIP**"
