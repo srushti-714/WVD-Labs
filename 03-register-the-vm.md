@@ -20,7 +20,7 @@
 
   # On the RDSH Server, Download and install the Windows Virtual Desktop Agent. 
 
-1.  Open Internet Explorer 
+1.  Open a browser
 
 1.  Download the **Windows Virtual Desktop Agent** 
 
