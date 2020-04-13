@@ -5,7 +5,7 @@
  **To register the Windows Virtual Desktop agents, do the following on the RDSH windows server**
   
   
-1. Go to the Environment details page and copy the value of "**RDSH VM PrivateIP**"
+12. Go to the Environment details page and copy the value of "**RDSH VM PrivateIP**"
 
 1. On the Jumpvm, search for Remote Desktop Connection in Windows Search and open that.
 
