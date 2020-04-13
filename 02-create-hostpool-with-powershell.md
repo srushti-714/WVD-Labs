@@ -34,7 +34,6 @@ To quickly download and install the Windows Virtual Desktop PowerShell module,
   
   
  4. Replace the **Wvd tenant name** from the environment details page 
-    
     Note: wvd tenant name is like wvdtrainingtenantxxxxxx where xxxxxx is the deployment Id
 
     ```sql
@@ -54,7 +53,7 @@ To quickly download and install the Windows Virtual Desktop PowerShell module,
 
       **New-RdsHostPool -TenantName $tenant -Name $hostpoolname** 
 
- 9. Run the next cmdlet to create **aregistration token** to authorize a session host to join the host pool and save it to a new file on     your local computer. You can specify how long the registration token is valid by using the -ExpirationHours parameter. 
+ 9. Run the next cmdlet to create **a registration token** to authorize a session host to join the host pool and save it to a new file on     your local computer. You can specify how long the registration token is valid by using the -ExpirationHours parameter. 
     
      ```sql
 
