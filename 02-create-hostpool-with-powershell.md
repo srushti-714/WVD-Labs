@@ -34,7 +34,8 @@ To quickly download and install the Windows Virtual Desktop PowerShell module,
   
   
  4. Replace the **Wvd tenant name** from the environment details page 
-    Note: wvd tenant name is like wvdtrainingtenantxxxxxx where xxxxxx is the deployment Id
+    
+     **Note**: Wvd tenant name is like wvdtrainingtenantxxxxxx where xxxxxx is the deployment Id
 
     ```sql
        $tenant = "wvdtrainingtenant[DeploymentId]" 
