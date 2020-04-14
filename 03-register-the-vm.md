@@ -64,8 +64,7 @@
 1. In the Password box, Copy the password of "**WVD User 1**" from the user environment details page and enter it here and click **Sign in** 
 
 1.  Click on **WS 2019**, click **Allow**, and log in with: 
-    
-   ![ws 2019 allow.](media/4.png)
+    ![ws 2019 allow.](media/4.png)
     
       Username: Copy the value of "**WVD User 1**" from the user environment details page and enter it here 
        
