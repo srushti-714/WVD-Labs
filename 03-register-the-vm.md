@@ -50,9 +50,10 @@
        **Note**: Wait for agents to update  ~5 mins 
 
 1. When the host pool **Status** is **Available**, continue to the next section 
+       
+   ![status.](media/3.png)
 
-
-  # Sign in to host pool interface 
+ # Sign in to host pool interface 
 
 1. Right click on **Edge** from the taskbar and select **New InPrivate Window** 
 
