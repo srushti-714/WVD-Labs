@@ -30,7 +30,7 @@
 
 1.  When the installer asks you for the registration token, copy and paste in the value exported to the desktop file **token** in the previous step
     
-    ![token.](media/2.png)
+    ![token desktop.](media/2.png)
 
 1.  Download and install the **Windows Virtual Desktop Agent Bootloader** 
 
