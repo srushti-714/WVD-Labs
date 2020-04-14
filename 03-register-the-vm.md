@@ -66,11 +66,12 @@
 1.  Click on **WS 2019**, click **Allow**, and log in with: 
 
        Username: Copy the value of "**WVD User 1**" from the user environment details page and enter it here
-
+       
        Password: Copy the password of "**WVD User 1**" from the user environment details page and enter it here
     
     ![ws 2019 allow.](media/4.png)
     
+
 1.  Once connected to the desktop, open task manager 
 
 1. In task manager, click the More details button and then click on the Users tab, notice that your current user **WVD User 1** is connected to the RDSH server. 
