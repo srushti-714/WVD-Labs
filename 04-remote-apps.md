@@ -78,3 +78,6 @@ New-RdsRemoteApp -TenantName $tenant -HostPoolName $hostpoolname -AppGroupName W
 
       Password: Copy the password of "**WVD User 2**" from the user environment details page and enter it here
       
+   ![wordpad.](media/7.png)
+
+      
