@@ -43,13 +43,15 @@
 ```json
 New-RdsRemoteApp -TenantName $tenant -HostPoolName $hostpoolname -AppGroupName Wordpad -Name Wordpad -Filepath "C:\Program Files\Windows NT\Accessories\wordpad.exe" -IconPath "C:\Program Files\Windows NT\Accessories\wordpad.exe"
 ```
-       
+   ![newrdsremoteapp.](media/11.png)
+
 6. Verify the app was published to the remote app group.
 
      ```sql
      Get-RdsRemoteApp -TenantName $tenant -HostPoolName $hostpoolname -AppGroupName Wordpad
      ```
-     
+    ![getrds.](media/12.png)
+
      **Note**: You can add additional apps to this remote app group by repeating the above steps. 
 
 7.  Now that we've created a remote app group and published the Wordpad app we can assign access to the group. 
