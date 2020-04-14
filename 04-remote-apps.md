@@ -20,19 +20,22 @@
         New-RdsAppGroup -TenantName $tenant -HostPoolName $hostpoolname -Name Wordpad -ResourceType 
        RemoteApp
        ```
+      ![rdscreate.](media/8.png)
 
 2.  To see a list of available applications in the host pool run the following command. 
 
       ```sql
       Get-RdsStartMenuApp -TenantName $tenant -HostPoolName $hostpoolname -AppGroupName Wordpad
       ```
-      
+    ![list rds.](media/9.png)
+
 3.  We can search for specific apps, and in this exercise we want to search for and create a remote app for our Wordpad users. 
 
       ```sql
      Get-RdsStartMenuApp -TenantName $tenant -HostPoolName $hostpoolname -AppGroupName Wordpad | ?{$_.FriendlyName -match "Wordpad"}
       ```
-      
+    ![list wordpad.](media/10.png)
+ 
 4.  In the next step, we will use the FilePath, IconPath, and IconIndex fto create our Wordpad Desktop remote app 
 
 5. To add the Wordpad application to the remote app group run the following cmdlet.
