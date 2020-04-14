@@ -34,7 +34,7 @@
 
 1.  Download and install the **Windows Virtual Desktop Agent Bootloader** 
 
-   **https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWrxrH**
+       **https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWrxrH**
 
 1. Run the installer 
 
