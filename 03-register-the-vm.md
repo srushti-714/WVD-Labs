@@ -79,6 +79,6 @@
         
     ![wvd user1.](media/6.png)
 
-      You have now logged in to the Windows Server 2019 RDSH session host.
+     You have now logged in to the Windows Server 2019 RDSH session host.
        
        
