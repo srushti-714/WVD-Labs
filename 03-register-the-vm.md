@@ -75,6 +75,10 @@
 
 1. In task manager, click the More details button and then click on the Users tab, notice that your current user **WVD User 1** is connected to the RDSH server. 
 
+  ![more details.](media/5.png)
+        
+  ![wvd user1.](media/6.png)
+
       You have now logged in to the Windows Server 2019 RDSH session host.
        
        
