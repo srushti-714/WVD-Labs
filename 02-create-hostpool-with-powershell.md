@@ -79,3 +79,4 @@ To quickly download and install the Windows Virtual Desktop PowerShell module,
      ```sql
       Set-RdsRemoteDesktop -TenantName $tenant -HostPoolName $hostpoolname -AppGroupName "Desktop Application Group" -FriendlyName "WS 2019"
       ```
+    ![ws name.](media/1.png)
