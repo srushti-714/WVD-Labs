@@ -66,8 +66,9 @@
 1.  Click on **WS 2019**, click **Allow**, and log in with: 
 
        Username: Copy the value of "**WVD User 1**" from the user environment details page and enter it here
+
        Password: Copy the password of "**WVD User 1**" from the user environment details page and enter it here
-       
+      
     ![ws 2019.](media/4.png)
     
 1.  Once connected to the desktop, open task manager 
