@@ -65,7 +65,7 @@
 
 1.  Click on **WS 2019**, click **Allow**, and log in with: 
 
-    ![ws allow.](media/4.png)
+   ![ws allow.](media/4.png)
     
        Username: Copy the value of "**WVD User 1**" from the user environment details page and enter it here
 
