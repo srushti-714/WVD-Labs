@@ -5,7 +5,7 @@
    
   **Manage app groups tutorial**
   
-  **https://docs.microsoft.com/en-us/azure/virtual-desktop/manage-app-groups**
+  https://docs.microsoft.com/en-us/azure/virtual-desktop/manage-app-groups
   
   
   # Create a remote application group 
